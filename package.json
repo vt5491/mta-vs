@@ -1,0 +1,40 @@
+{
+  "name": "mta-vs",
+  "displayName": "mta-vs",
+  "description": "muti-theme applicator for vscode",
+  "version": "0.0.1",
+  "publisher": "vt5491",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:mta-vs.sayHello"
+  ],
+  "main": "./out/src/mta-vs",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mta-vs.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "sinon": "^1.17.5",
+    "typescript": "^1.8.5",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "yamljs": "^0.2.8"
+  }
+}
