@@ -28,6 +28,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "jasmine-core": "^2.4.1",
     "sinon": "^1.17.5",
     "typescript": "^1.8.5",
