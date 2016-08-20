@@ -116,6 +116,6 @@ describe('simple test', () => {
 
     let themeList : string[] = localThemeManagerExt.getThemeList()
 
-    expect(themeList.length).to.equal(2)
+    expect(themeList.length).to.equal(4)
   })
 })

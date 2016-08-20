@@ -11,14 +11,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:mta-vs.sayHello"
+    "onCommand:mta-vs.mta-vs",
+    "onCommand:mta-vs.server"
   ],
   "main": "./out/src/mta-vs",
   "contributes": {
     "commands": [
       {
-        "command": "mta-vs.sayHello",
-        "title": "Hello World"
+        "command": "mta-vs.mta-vs",
+        "title": "mta-vs"
+      },
+      {
+        "command": "mta-vs.server",
+        "title": "mta-vs-server"
       }
     ]
   },
@@ -36,6 +41,7 @@
   },
   "dependencies": {
     "fs-extra": "^0.30.0",
+    "http": "0.0.0",
     "yamljs": "^0.2.8"
   }
 }

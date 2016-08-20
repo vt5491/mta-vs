@@ -1,0 +1,28 @@
+import * as vscode from 'vscode';
+import * as http from "http";
+import {LocalThemeManagerExt} from './local-theme-manager-ext';
+
+export class CmdServerExt {
+
+  public server : any
+
+  public start() {
+    this.server = http.createServer(function (req, res) {
+      // res.write('Hi there man from UNCLE')
+      var workspaceConfig: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
+      var mtaVscode: any = workspaceConfig.get('mta-vscode')
+      console.log('mta-vs: mta-vscode.themeDir=' + mtaVscode.themeDir)
+
+      let localThemeManagerExt = new LocalThemeManagerExt({
+        themeDir: mtaVscode.themeDir
+      })
+
+      var theme = 'red';
+      var themeInfo = localThemeManagerExt.getThemeInfo(theme);
+      // res.end('Hi there man from UNCLE2')
+      res.end(themeInfo.dom_text);
+      // res.end
+    })
+    this.server.listen(3000)
+  }
+}

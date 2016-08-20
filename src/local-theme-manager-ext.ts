@@ -1,3 +1,4 @@
+import * as vscode from 'vscode';
 import {window, commands, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument} from 'vscode';
 import * as fs from "fs-extra";
 import * as YAML from "yamljs";
@@ -11,12 +12,13 @@ export interface ThemeInfo  {
 }
 
 export class LocalThemeManagerExt {
-    private _statusBarItem: StatusBarItem;
+    // this iate _statusBarItem: StatusBarItem;
     // private fs : Object;
     // dependencies
     private fs : any; //works
     private YAML: any;    
     public themeDir: string
+    private cmdChannel : StatusBarItem
     
     // private fs : fs;
 
@@ -24,10 +26,26 @@ export class LocalThemeManagerExt {
       this.fs = params.fs || fs;
       this.YAML = params.YAML || YAML; 
       this.themeDir = params.themeDir;
+
+      if (!this.cmdChannel) {
+        this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
+      }
     }
 
     public doIt() : number { 
       return 7;
+    }
+
+    // this is basically the main entry and management method.
+    updateLocalThemeManagerExt() {
+         var themeList = this.getThemeList()
+          vscode.window.showQuickPick(themeList)
+            .then(val => {
+              // vscode.window.showInformationMessage('You picked ' + val)
+                       // Update the status bar
+              this.cmdChannel.text = `Theme: ${val}`
+              this.cmdChannel.show(); 
+            });
     }
 
 // private _layers: { [id: string] : SimpleLayer } = {};
@@ -65,14 +83,16 @@ export class LocalThemeManagerExt {
 
     }
 
-    // TODO: make dir an instance variable 
     public getThemeList() {
       let fileList : string[] = fs.readdirSync(this.themeDir)
       let themeList : string[] = []
 
+      themeList.push('say_hi')
+      themeList.push('say_bye')
       for( var i=0; i < fileList.length; i++) {
         if( fileList[i].match(/\.yml/)) {
-          themeList.push( fileList[i])
+          var themeName = fileList[i].replace(/\.yml/, '')
+          themeList.push( themeName)
         }
       }
 
