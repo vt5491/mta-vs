@@ -14,7 +14,7 @@
     "onCommand:mta-vs.mta-vs",
     "onCommand:mta-vs.server"
   ],
-  "main": "./out/src/mta-vs",
+  "main": "./out/src/mta-vs-ext",
   "contributes": {
     "commands": [
       {

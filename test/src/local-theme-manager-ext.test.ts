@@ -10,8 +10,8 @@ import * as YAML from "yamljs";
 // as well as import your mta-vs to test it
 import * as vscode from 'vscode';
 // import * as LocalThemeManagerClient from '../src/local-theme-manager-client';
-import {LocalThemeManagerExt} from '../src/local-theme-manager-ext';
-import {ThemeInfo} from '../src/local-theme-manager-ext';
+import {LocalThemeManagerExt} from '../../src/local-theme-manager-ext';
+import {ThemeInfo} from '../../src/local-theme-manager-ext';
 //var expect = require('chai').expect;
 // import * as expect from 'chai';
 import { expect } from 'chai';
@@ -36,6 +36,9 @@ import * as sinon from "sinon";
 
 describe('simple test', () => {
   var localThemeManagerExt : LocalThemeManagerExt;
+  var sandbox; 
+  var mockYAML;
+  var mockFs;
 
   console.log('now in simple test')
   //var fs;
@@ -64,20 +67,43 @@ describe('simple test', () => {
     // var mockYAML = sinon(YAML, "load", () => {
       
     // })
-   var mockYAML = sinon.stub(YAML, "load")
+   //var mockYAML = sinon.stub(YAML, "load")
+   console.log('before: mockYAML 1=' + mockYAML)
+   sandbox = sinon.sandbox.create();
+
+   try {
+   mockYAML = sandbox.stub(YAML, "load")
     // .withArgs('/tmp/dummy/kimbie_dark.yml')
     .withArgs('/tmp/dummy/kimbie_dark.yml')
     .returns(themeInfo) 
-    params['YAML'] = mockYAML
 
-   var mockFs = sinon.stub(fs, "readdirSync")
+    console.log('before: mockYAML 2=' + mockYAML)
+   }
+   catch(e){
+     console.log('caught error: ' + e)
+   }
+
+   try {
+   mockFs = sandbox.stub(fs, "readdirSync")
     .returns(['kimbie_dark.yml', 'red.yml', 'vt_note.txt']) 
+   }
+   catch(e){
+     console.log('caught error: ' + e)
+   }
 
+    params['YAML'] = mockYAML
     params['fs'] = mockFs;
     params['themeDir'] = '/tmp/dummy'
 
     localThemeManagerExt = new LocalThemeManagerExt(params);
   })  
+
+  after(() => {
+    // console.log('before: mockYAML=' + mockYAML)
+    // mockYAML.restore();
+    sandbox.restore()
+    // mockYAML.reset();
+  });
 
   it('is an instance of the proper type', () => {
     console.log('typeof localThemeManagerClient=' + typeof localThemeManagerExt)
