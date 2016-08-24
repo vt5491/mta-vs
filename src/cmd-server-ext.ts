@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import * as http from "http";
 import {LocalThemeManagerExt} from './local-theme-manager-ext';
+import * as YAML from "yamljs";
 
 export class CmdServerExt {
 
@@ -9,6 +10,8 @@ export class CmdServerExt {
   public start() {
     this.server = http.createServer(function (req, res) {
       // res.write('Hi there man from UNCLE')
+      var theme = req.url.split('=')[1];
+      console.log('cmd-server-ext: theme=' + theme);
       var workspaceConfig: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
       var mtaVscode: any = workspaceConfig.get('mta-vscode')
       console.log('mta-vs: mta-vscode.themeDir=' + mtaVscode.themeDir)
@@ -17,10 +20,12 @@ export class CmdServerExt {
         themeDir: mtaVscode.themeDir
       })
 
-      var theme = 'red';
+      // var theme = 'red';
       var themeInfo = localThemeManagerExt.getThemeInfo(theme);
       // res.end('Hi there man from UNCLE2')
-      res.end(themeInfo.dom_text);
+      // res.end(themeInfo.dom_text);
+      //res.end(YAML.stringify(themeInfo));
+      res.end(JSON.stringify(themeInfo));
       // res.end
     })
     this.server.listen(3000)

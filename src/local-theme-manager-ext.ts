@@ -87,8 +87,8 @@ export class LocalThemeManagerExt {
       let fileList : string[] = fs.readdirSync(this.themeDir)
       let themeList : string[] = []
 
-      themeList.push('say_hi')
-      themeList.push('say_bye')
+      // themeList.push('say_hi')
+      // themeList.push('say_bye')
       for( var i=0; i < fileList.length; i++) {
         if( fileList[i].match(/\.yml/)) {
           var themeName = fileList[i].replace(/\.yml/, '')
