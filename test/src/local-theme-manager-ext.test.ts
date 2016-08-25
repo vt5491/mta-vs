@@ -141,7 +141,8 @@ describe('simple test', () => {
   it('getThemeList works', () => {
 
     let themeList : string[] = localThemeManagerExt.getThemeList()
-
-    expect(themeList.length).to.equal(4)
+    // console.log('ut: themeList=' + themeList)
+    // console.log('ut: themeList.length=' + themeList.length)
+    expect(themeList.length).to.equal(2)
   })
 })
