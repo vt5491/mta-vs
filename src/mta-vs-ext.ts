@@ -15,6 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
     var workspaceConfig : vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
     var mtaVscode : any = workspaceConfig.get('mta-vscode')
     console.log('mta-vs: mta-vscode.themeDir=' + mtaVscode.themeDir)
+    var mtaServerActive: boolean = false;
 
     let localThemeManagerExt = new LocalThemeManagerExt({
         themeDir : mtaVscode.themeDir
@@ -34,10 +35,19 @@ export function activate(context: vscode.ExtensionContext) {
         // console.log('mta-vs: now calling LocalThemeManagerExt')
         // var result = localThemeManagerExt.getThemeInfo("abc", "abc")
         // console.log('mta-vs: result=' + result)
-        console.log('mta-vs: result=' + workspaceConfig)
-        var editor : any = workspaceConfig.get('editor')
-        console.log('mta-vs: editor.fontSize=' + editor.fontSize)
-        console.log('mta-vs. editor.fontSize' + workspaceConfig.has('editor'))
+        // console.log('mta-vs: result=' + workspaceConfig)
+        // var editor : any = workspaceConfig.get('editor')
+        // console.log('mta-vs: editor.fontSize=' + editor.fontSize)
+        // console.log('mta-vs. editor.fontSize' + workspaceConfig.has('editor'))
+        // check if the server is active. 
+        // if not start it up ourselves, so the user doesn't have to manually start
+        if (!mtaServerActive) {
+            console.log('mta-vs: now starting cmdServerExt automatically')
+            let cmdServerExt = new CmdServerExt()
+
+            mtaServerActive = true;
+            cmdServerExt.start()
+        }
 
         localThemeManagerExt.updateLocalThemeManagerExt()
      
@@ -48,10 +58,13 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 
     let disposableServer = vscode.commands.registerCommand('mta-vs.server', () => {
-      console.log('mta-vs: now starting cmdServerExt')
-      let cmdServerExt = new CmdServerExt()
+        if (!mtaServerActive) {
+            console.log('mta-vs: now starting cmdServerExt')
+            let cmdServerExt = new CmdServerExt()
 
-      cmdServerExt.start()
+            mtaServerActive = true;
+            cmdServerExt.start()
+        }
     }) 
 
     context.subscriptions.push(disposableServer);

@@ -28,6 +28,12 @@ export class CmdServerExt {
       res.end(JSON.stringify(themeInfo));
       // res.end
     })
-    this.server.listen(3000)
+
+    // determine what port we should start on
+    var workspaceConfig : vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
+    var mtaVscode : any = workspaceConfig.get('mta-vscode')
+    console.log('mta-vs: mta-vscode.server.port=' + mtaVscode.server.port)
+    var port = mtaVscode.server.port || 3000;
+    this.server.listen(port)
   }
 }
