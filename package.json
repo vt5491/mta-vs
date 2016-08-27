@@ -25,6 +25,12 @@
         "command": "mta-vs.server",
         "title": "mta-vs-server"
       }
+    ],
+    "keybindings": [
+      {
+        "key": "shift+ctrl+v",
+        "command": "mta-vs.mta-vs"
+      }
     ]
   },
   "scripts": {
