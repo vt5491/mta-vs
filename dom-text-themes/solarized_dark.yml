@@ -1,0 +1,54 @@
+display_name : Solarized Dark 
+class_name : solarized_dark
+class_name_fq : vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme
+dom_text : >
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.comment { font-style: italic; color: rgba(101, 123, 131, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.string { color: rgba(42, 161, 152, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.string.regexp { color: rgba(211, 1, 2, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.constant.numeric { color: rgba(211, 54, 130, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.variable.language { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.variable.other { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.keyword { color: rgba(133, 153, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.storage { font-weight: bold; color: rgba(147, 161, 161, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.entity.name.class { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.entity.name.type.class { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.entity.name.function { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.punctuation.definition.variable { color: rgba(133, 153, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.punctuation.section.embedded.begin { color: rgba(211, 1, 2, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.punctuation.section.embedded.end { color: rgba(211, 1, 2, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.constant.language { color: rgba(181, 137, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.meta.preprocessor { color: rgba(181, 137, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.function.construct { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.keyword.other.new { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.constant.character { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.constant.other { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.entity.other.inherited-class { color: rgba(108, 113, 196, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.variable.parameter {  }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.entity.name.tag { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.punctuation.definition.tag { color: rgba(101, 123, 131, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.entity.other.attribute-name { color: rgba(147, 161, 161, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.function { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.punctuation.separator.continuation { color: rgba(211, 1, 2, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.constant {  }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.type { color: rgba(133, 153, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.class { color: rgba(133, 153, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.type.exception { color: rgba(203, 75, 22, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.support.other.variable {  }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.invalid {  }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.quote { color: rgba(133, 153, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.list { color: rgba(181, 137, 0, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.bold { color: rgba(211, 54, 130, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.italic { color: rgba(211, 54, 130, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.inline.raw { color: rgba(42, 161, 152, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.heading { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.markup.heading.setext { color: rgba(38, 139, 210, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .monaco-editor-background { background-color: rgba(0, 43, 54, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .glyph-margin { background-color: rgba(0, 43, 54, 1); }
+    .vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(0, 43, 54, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token { color: rgba(147, 161, 161, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .focused .selected-text { background-color: rgba(7, 54, 66, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .selected-text { background-color: rgba(7, 54, 66, 0.5); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .current-line { background-color: rgba(7, 54, 66, 1); border:0; }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .cursor { background-color: rgba(211, 1, 2, 1); border-color: rgba(211, 1, 2, 1); color: rgba(44, 254, 253, 1); }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .token.whitespace { color: rgba(147, 161, 161, 0.5) !important; }
+    .monaco-editor.vs-dark.vscode-theme-solarized-dark-themes-Solarized-dark-tmTheme .lines-content .cigr { background: rgba(147, 161, 161, 0.5); }

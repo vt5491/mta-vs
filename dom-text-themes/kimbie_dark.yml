@@ -1,0 +1,76 @@
+display_name : Kimbie Dark 
+class_name : kimbie_dark
+class_name_fq : vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme
+dom_text : >
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.variable.parameter.function { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.comment { color: rgba(165, 122, 76, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.comment { color: rgba(165, 122, 76, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.string { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.variable { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.string { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.parameters { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.string { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.array { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.none { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.keyword.operator { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.keyword { color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.keyword.control { color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.variable { color: rgba(220, 57, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.name.function { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.meta.require { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.support.function.any-method { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.meta.class { color: rgba(240, 100, 49, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.support.class { color: rgba(240, 100, 49, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.name.class { color: rgba(240, 100, 49, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.name.type.class { color: rgba(240, 100, 49, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.keyword.other.special-method { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.storage { color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.support.function { color: rgba(126, 96, 44, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.string { color: rgba(136, 155, 74, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.constant.other.symbol { color: rgba(136, 155, 74, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.other.inherited-class { color: rgba(136, 155, 74, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.constant.numeric { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.none { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.none { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.constant { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.name.tag { color: rgba(220, 57, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.other.attribute-name { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.other.attribute-name.id { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.entity { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.meta.selector { color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.none { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.heading { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.heading.setext { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.heading { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.entity.name.section { color: rgba(138, 177, 176, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.keyword.other.unit { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.bold { font-weight: bold; color: rgba(240, 100, 49, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.bold { font-weight: bold; color: rgba(240, 100, 49, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.italic { font-style: italic; color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.italic { font-style: italic; color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.raw.inline { color: rgba(136, 155, 74, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.string.other.link { color: rgba(220, 57, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.meta.link { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.list { color: rgba(220, 57, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.quote { color: rgba(247, 154, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.meta.separator { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.inserted { color: rgba(136, 155, 74, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.deleted { color: rgba(220, 57, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.markup.changed { color: rgba(152, 103, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.constant.other.color { color: rgba(126, 96, 44, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.string.regexp { color: rgba(126, 96, 44, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.constant.character.escape { color: rgba(126, 96, 44, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.section.embedded { color: rgba(24, 64, 30, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.variable.interpolation { color: rgba(24, 64, 30, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.invalid.illegal { color: rgba(220, 57, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .monaco-editor-background { background-color: rgba(34, 26, 15, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .glyph-margin { background-color: rgba(34, 26, 15, 1); }
+    .vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(34, 26, 15, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token { color: rgba(211, 175, 134, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .focused .selected-text { background-color: rgba(132, 97, 61, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .selected-text { background-color: rgba(132, 97, 61, 0.5); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .current-line { background-color: rgba(94, 69, 43, 1); border:0; }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .cursor { background-color: rgba(211, 175, 134, 1); border-color: rgba(211, 175, 134, 1); color: rgba(44, 80, 121, 1); }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.whitespace { color: rgba(165, 122, 76, 1) !important; }
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .lines-content .cigr { background: rgba(165, 122, 76, 1); }

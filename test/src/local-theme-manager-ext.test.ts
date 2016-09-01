@@ -39,6 +39,7 @@ describe('simple test', () => {
   var sandbox; 
   var mockYAML;
   var mockFs;
+  var testThemeDir = '/tmp/themes/'
 
   console.log('now in simple test')
   //var fs;
@@ -74,7 +75,8 @@ describe('simple test', () => {
    try {
    mockYAML = sandbox.stub(YAML, "load")
     // .withArgs('/tmp/dummy/kimbie_dark.yml')
-    .withArgs('/tmp/dummy/kimbie_dark.yml')
+    // .withArgs('/tmp/dummy/kimbie_dark.yml')
+    .withArgs(testThemeDir + 'kimbie_dark.yml')
     .returns(themeInfo) 
 
     console.log('before: mockYAML 2=' + mockYAML)
@@ -96,6 +98,9 @@ describe('simple test', () => {
     params['themeDir'] = '/tmp/dummy'
 
     localThemeManagerExt = new LocalThemeManagerExt(params);
+
+    // //mock up extensions.getExtension('vt5491.mta-vs')
+    // vscode.extensions.getExtension = 
   })  
 
   after(() => {
@@ -111,6 +116,17 @@ describe('simple test', () => {
     //  assert(typeof localThemeManagerClient === 'LocalThemeManagerClient')
   });  
 
+  // it.only('has an mtaExtension instance variable', () => {
+  it('has an mtaExtension instance variable', () => {
+    // assert(localThemeManagerExt.mtaExtension).exists
+    expect(localThemeManagerExt).to.have.property('mtaExtension');
+  });
+
+  // Note: too hard to mock up an extension
+  // it('getThemeDir returns the proper value', () => {
+  //   expect(localThemeManagerExt.getThemeDir).to.equal('C:/tmp/themes');
+  // });
+
   it('doIt returns 7', () => {
     //expect(localThemeManagerClient.doIt()).equals(7));
     assert(localThemeManagerExt.doIt() == 7);
@@ -121,10 +137,14 @@ describe('simple test', () => {
     let theme = 'kimbie_dark'
     let params = {'fs' : fs, 'themeDir' : '/tmp/dummy'}
     console.log('ut: hello')
+
+    // mockup getThemeDir to return a dummy directory
+    localThemeManagerExt.getThemeDir = function() { return testThemeDir}
     // let r = fs.statSync('/home/vturner/vtstuff/tmp')
     // console.log('ut: r=' + r)
     // alert('ut: r=' + r)
     let themeInfo : ThemeInfo = localThemeManagerExt.getThemeInfo(theme);
+    console.log('ut: themeInfo=' + themeInfo)
     //console.log('domTextTheme=' + domTextTheme)
     // let domTextTheme : string = localThemeManagerClient.getDomTextTheme(params);
     // var r = localThemeManagerClient.getDomTextTheme({fs: 'fuck', dir: 'fuck'})

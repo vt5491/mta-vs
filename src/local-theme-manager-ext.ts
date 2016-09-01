@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
-import {window, commands, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument} from 'vscode';
+import {window, commands, Disposable, ExtensionContext, 
+  StatusBarAlignment, StatusBarItem, TextDocument, extensions} from 'vscode';
 import * as fs from "fs-extra";
 import * as YAML from "yamljs";
 
@@ -19,13 +20,16 @@ export class LocalThemeManagerExt {
     private YAML: any;    
     public themeDir: string
     private cmdChannel : StatusBarItem
+    public mtaExtension
     
     // private fs : fs;
 
     constructor(params) {
       this.fs = params.fs || fs;
       this.YAML = params.YAML || YAML; 
+      // Note: this is defunct. replace by mtaExtension.extensionPath
       this.themeDir = params.themeDir;
+      this.mtaExtension = vscode.extensions.getExtension('vt5491.mta-vs')
 
       if (!this.cmdChannel) {
         this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
@@ -66,7 +70,19 @@ export class LocalThemeManagerExt {
       // let r = fs.statSync('/home/vturner/vtstuff/tmp')
 
       // console.log('LocalThemeManagerClient.getDomThemeClasses: r=' + r)
-      var themeFile = this.themeDir + '/' + theme + '.yml'
+      // var themeFile = this.themeDir + '/' + theme + '.yml'
+      var themeFile = this.getThemeDir() + theme + '.yml'
+
+      // console.log('point a: vscode.extensions=' + vscode.extensions)
+      // var tmp = vscode.extensions.getExtension('vt5491.mta-vs')
+      // console.log('LocalThemeManagerExt.getThemeInfo: extension.extensionPath=' + tmp.extensionPath)
+      // var tmp2 = tmp + '/dom-text-themes/' + theme + '.yml'
+      // console.log('LocalThemeManagerExt.getThemeInfo: tmp2=' + tmp2)
+
+      // var tmp = vscode.extensions.getExtension('mta-vs')
+      // console.log('LocalThemeManagerExt.getThemeInfo: extension.extensionPath=' + tmp.extensionPath)
+      // var tmp2 = tmp + '/'
+      // var themeFile = '../dom-text-themes' + '/' + theme + '.yml'
       console.log('LocalThemeManagerExt.getThemeInfo: themeFile=' + themeFile)
       // var themeFile = '/home/vturner/vtstuff/vscode/dom-text-themes/kimbie_dark.yml'
       // var themeFile = '/vtstuff/vscode/dom-text-themes/kimbie_dark.yml'
@@ -97,5 +113,12 @@ export class LocalThemeManagerExt {
       }
 
       return themeList
+    }
+
+    public getThemeDir() {
+      var themeDir = this.mtaExtension.extensionPath.replace(/\\/g, "/");
+
+      // normalize to unix conventions
+      return themeDir + '/dom-text-themes/' 
     }
 }

@@ -1,0 +1,48 @@
+display_name : High Contrast 
+class_name : high_contrast
+class_name_fq : vscode-theme-defaults-themes-hc_black-json
+dom_text : >
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.emphasis { font-style: italic; }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.strong { font-weight: bold; }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.header { color: rgba(0, 0, 128, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.comment { color: rgba(124, 166, 104, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.constant.language { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.constant.numeric { color: rgba(181, 206, 168, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.constant.regexp { color: rgba(180, 102, 149, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.constant.rgb-value { color: rgba(212, 212, 212, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.entity.name.tag { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.entity.name.selector { color: rgba(215, 186, 125, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.entity.other.attribute-name { color: rgba(156, 220, 254, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.entity.other.attribute-name.css { color: rgba(215, 186, 125, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.invalid { color: rgba(244, 71, 71, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.underline { text-decoration: underline; }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.bold { font-weight: bold; }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.heading { color: rgba(103, 150, 230, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.italic { font-style: italic; }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.inserted { color: rgba(181, 206, 168, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.deleted { color: rgba(206, 145, 120, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.markup.changed { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.meta.selector { color: rgba(215, 186, 125, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.meta.tag { color: rgba(128, 128, 128, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.meta.preprocessor { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.meta.preprocessor.string { color: rgba(206, 145, 120, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.meta.preprocessor.numeric { color: rgba(181, 206, 168, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.meta.structure.dictionary.key.python { color: rgba(156, 220, 254, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.storage { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.storage.type { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.storage.modifier { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.string { color: rgba(206, 145, 120, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.string.tag { color: rgba(206, 145, 120, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.string.value { color: rgba(206, 145, 120, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.string.regexp { color: rgba(209, 105, 105, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.support.type.property-name { color: rgba(212, 212, 212, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.keyword { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.keyword.control { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.keyword.control.less { color: rgba(215, 186, 125, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.keyword.operator { color: rgba(212, 212, 212, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.keyword.operator.new { color: rgba(86, 156, 214, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.keyword.other.unit { color: rgba(181, 206, 168, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.support.function.git-rebase { color: rgba(212, 212, 212, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.constant.sha.git-rebase { color: rgba(181, 206, 168, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.storage.modifier.import.java { color: rgba(212, 212, 212, 1); }
+    .monaco-editor.hc-black.vscode-theme-defaults-themes-hc_black-json .token.storage.modifier.package.java { color: rgba(212, 212, 212, 1); }

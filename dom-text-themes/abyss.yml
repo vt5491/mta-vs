@@ -1,0 +1,42 @@
+display_name : Abyss 
+class_name : abyss
+class_name_fq : vscode-theme-abyss-themes-Abyss-tmTheme
+dom_text : >
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.comment { color: rgba(34, 51, 85, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.string { color: rgba(34, 170, 68, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.constant.numeric { color: rgba(242, 128, 208, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.constant.language { color: rgba(242, 128, 208, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.constant.character { color: rgba(242, 128, 208, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.constant.other { color: rgba(242, 128, 208, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.variable {  }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.keyword { color: rgba(34, 85, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.storage { color: rgba(34, 85, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.storage.type { font-style: italic; color: rgba(153, 102, 184, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.entity.name.class { text-decoration: underline; color: rgba(255, 238, 187, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.entity.other.inherited-class { color: rgba(221, 187, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.entity.name.function { color: rgba(221, 187, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.variable.parameter { font-style: italic; color: rgba(34, 119, 255, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.entity.name.tag { color: rgba(34, 85, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.entity.other.attribute-name { color: rgba(221, 187, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.support.function { color: rgba(153, 102, 184, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.support.constant { color: rgba(153, 102, 184, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.support.type { font-style: italic; color: rgba(153, 102, 184, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.support.class { font-style: italic; color: rgba(153, 102, 184, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.support.other.variable {  }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.invalid { color: rgba(248, 248, 240, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.invalid.deprecated { color: rgba(248, 248, 240, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.markup.quote { color: rgba(34, 170, 68, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.markup.bold { color: rgba(34, 170, 68, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.markup.italic { color: rgba(34, 170, 68, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.markup.inline.raw { color: rgba(153, 102, 184, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.markup.heading.setext { color: rgba(221, 187, 136, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .monaco-editor-background { background-color: rgba(0, 12, 24, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .glyph-margin { background-color: rgba(0, 12, 24, 1); }
+    .vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(0, 12, 24, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token { color: rgba(102, 136, 204, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .focused .selected-text { background-color: rgba(119, 8, 17, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .selected-text { background-color: rgba(119, 8, 17, 0.5); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .current-line { background-color: rgba(8, 32, 80, 1); border:0; }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .cursor { background-color: rgba(221, 187, 136, 1); border-color: rgba(221, 187, 136, 1); color: rgba(34, 68, 119, 1); }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.whitespace { color: rgba(0, 32, 64, 1) !important; }
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .lines-content .cigr { background: rgba(0, 32, 64, 1); }

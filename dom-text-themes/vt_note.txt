@@ -1,0 +1,3 @@
+this contains vscode themes in "dom text format" i.e. the xml plist source file has been loaded by vscode and placed in the dom in a "text" format.  I have then manually copied this text format for various themes into this directory.
+
+These themes are in a form suitable for usgage by mta-vscode to locally apply a theme at the file level.
