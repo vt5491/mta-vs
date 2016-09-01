@@ -1,31 +1,50 @@
-# mta-vs README
+# mta-vs
 
-This is the README for your extension "mta-vs". After writing up a brief description, we recommend including the following sections.
+mta-vs stands for "Multi-Theme-Applicator-VScode".  It allows you to apply multipe syntax themes to vscode.  
+
+There is a sister project to this, available for *Atom*,
+[located here](http://code.visualstudio.com/docs/languages/markdownhttps://atom.io/packages/multi-theme-applicator).  It has much the same functionality, so refer to that project for sample screen prints.
+
+Unfortunately, because vscode [does not allow direct manipulation of the DOM](https://code.visualstudio.com/docs/extensions/our-approach), this plugin requires an unofficial method to update the dom (it requires you install javascript libraries into the vscode runtime via the developers's console).  As a result, I cannot really make this availabe as an official plugin under the vscode marketplace.
+
+This document describes the special installation process necessary to get the plugin working.
 
 ## Features
+It allows for file level theming.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
+0) prelim: start a server from the lib dir:  
+python -m SimpleHTTPServer (python 2.x) (linux)  
+python -m http.server  (python 3.x) (windows)  
 
-For example if there is an image subfolder under your extension project workspace:
+1) Install Jquery into the console:  
 
-\!\[feature X\]\(images/feature-x.png\)
+fetch('http://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r => {eval(r); eval(r);});
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+2) Install the user libraries from the JS console:  
+
+`
+document.MTA_VS = {};  
+$.when(
+    fetch('http://localhost:8000/editor-theme-change-listener.js').then(r => r.text()).then(r => eval(r)),
+    fetch('http://localhost:8000/local-theme-manager-native.js').then(r => r.text()).then(r => eval(r)),
+    fetch('http://localhost:8000/mta-vs-native.js').then(r => r.text()).then(r => eval(r))
+    )
+    .done(function(first_call, second_call, third_call){
+      console.log('all loaded');
+    })
+    .fail(function(){
+      console.log('load failed');
+    });
+`
+
+3) Invoke theme dropdown with either ctrl-shift-v or selecting *mta* from the main command prompt (ctlr-shift-p)
+
+4) apply your themes on a file by file basis.
 
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
 
 ## Known Issues
 
@@ -35,31 +54,6 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
+### 0.0.1
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release on 2016-09-01
