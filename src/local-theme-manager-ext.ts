@@ -42,7 +42,11 @@ export class LocalThemeManagerExt {
 
     // this is basically the main entry and management method.
     updateLocalThemeManagerExt() {
+      console.log("hello from LocalThemeManagerExt.updateLocalThemeManagerExt")
+        //  var themeList = this.getThemeList()
          var themeList = this.getThemeList()
+         console.log('LocalThemeManagerExt.updateLocalThemeManagerExt: themeList.length=' + themeList.length) 
+         console.log('LocalThemeManagerExt.updateLocalThemeManagerExt: themeList[0]=' + themeList[0]) 
           vscode.window.showQuickPick(themeList)
             .then(val => {
               // vscode.window.showInformationMessage('You picked ' + val)
@@ -99,8 +103,10 @@ export class LocalThemeManagerExt {
 
     }
 
+    //TODO: update this to use getThemeDir
     public getThemeList() {
-      let fileList : string[] = fs.readdirSync(this.themeDir)
+      // let fileList : string[] = fs.readdirSync(this.themeDir)
+      let fileList : string[] = fs.readdirSync(this.getThemeDir())
       let themeList : string[] = []
 
       // themeList.push('say_hi')
