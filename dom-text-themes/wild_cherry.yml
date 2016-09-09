@@ -1,0 +1,48 @@
+display_name : Wild_Cherry 
+class_name : wild_cherry
+class_name_fq : gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme  
+dom_text : >
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.comment { color: rgba(98, 114, 164, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.string { color: rgba(254, 216, 136, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.constant.numeric { color: rgba(155, 95, 224, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.constant.language { color: rgba(155, 95, 224, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.constant.character { color: rgba(155, 95, 224, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.constant.other { color: rgba(155, 95, 224, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.variable {  }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.keyword { color: rgba(225, 93, 151, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.meta.tag { color: rgba(225, 93, 151, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.declaration.tag { color: rgba(225, 93, 151, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.storage { color: rgba(225, 93, 151, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.storage.type { font-style: italic; color: rgba(10, 172, 197, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.entity.name.class { text-decoration: underline; color: rgba(53, 186, 102, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.entity.other.inherited-class { color: rgba(53, 186, 102, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.entity.name.function { color: rgba(53, 186, 102, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.variable.parameter { font-style: italic; color: rgba(255, 184, 108, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.entity.name.tag { color: rgba(225, 93, 151, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.entity.other.attribute-name { color: rgba(53, 186, 102, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.support.function { color: rgba(10, 172, 197, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.support.constant { color: rgba(107, 229, 253, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.support.type { color: rgba(102, 217, 239, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.support.class { color: rgba(102, 217, 239, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.support.other.variable {  }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.invalid { color: rgba(248, 248, 240, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.invalid.deprecated { color: rgba(248, 248, 240, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.meta.structure.dictionary.json.string.quoted.double.json { color: rgba(207, 207, 194, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.meta.diff { color: rgba(98, 114, 164, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.meta.diff.header { color: rgba(98, 114, 164, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.markup.deleted { color: rgba(225, 93, 151, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.markup.inserted { color: rgba(53, 186, 102, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.markup.changed { color: rgba(254, 216, 136, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.constant.numeric.line-number.find-in-files.-.match { color: rgba(155, 95, 224, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.entity.name.filename { color: rgba(254, 216, 136, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.message.error { color: rgba(189, 28, 20, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .monaco-editor-background { background-color: rgba(43, 31, 50, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .glyph-margin { background-color: rgba(43, 31, 50, 1); }
+    .vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(43, 31, 50, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token { color: rgba(248, 248, 242, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .focused .selected-text { background-color: rgba(97, 0, 43, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .selected-text { background-color: rgba(97, 0, 43, 0.5); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .current-line { background-color: rgba(149, 90, 214, 1); border:0; }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .cursor { background-color: rgba(248, 248, 240, 1); border-color: rgba(248, 248, 240, 1); color: rgba(7, 7, 15, 1); }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .token.whitespace { color: rgba(56, 7, 47, 1) !important; }
+    .monaco-editor.vs-dark.gerane-Theme-wild-cherry-themes-wild-cherry-tmTheme .lines-content .cigr { background: rgba(56, 7, 47, 1); }

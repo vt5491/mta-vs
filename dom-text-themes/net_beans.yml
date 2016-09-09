@@ -1,0 +1,83 @@
+display_name : Net_Beans 
+class_name : net_beans
+class_name_fq : gerane-Theme-NetBeans-themes-NetBeans-tmTheme  
+dom_text : >
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.class { font-weight: bold; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.comment { color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.function { font-weight: bold; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.string { color: rgba(210, 123, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.punctuation.definition.tag.begin { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.punctuation.definition.tag.end { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.tag { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.other.attribute-name { color: rgba(0, 153, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.tag.css { font-weight: bold; color: rgba(0, 153, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.other.attribute-name.id.css { font-weight: bold; color: rgba(0, 153, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.other.attribute-name.class.css { font-weight: bold; color: rgba(0, 153, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.other.attribute-name.class.css { font-weight: bold; color: rgba(0, 153, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.other.attribute-name.pseudo-class.css { font-style: italic; color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.other.attribute-name.pseudo-element.css { font-style: italic; color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.support.type.property-name.css { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.support.constant.property-value.css { color: rgba(255, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.numeric.css { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.unit.css { color: rgba(0, 0, 102, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.support.function.misc.css { color: rgba(0, 0, 102, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.variable.parameter.misc.css { color: rgba(210, 123, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.punctuation.definition.tag.html { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.type.annotation.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.type.class.java { font-weight: bold; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.function.java { font-weight: bold; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.param.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.return.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.throws.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.exception.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.author.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.version.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.see.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.since.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.serial.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.serialField.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.serialData.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.deprecated.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.documentation.custom.javadoc { font-weight: bold; color: rgba(150, 150, 150, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.language.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.variable.language.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.modifier.extends.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.modifier.implements.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.modifier.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.conditional.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.arithmetic.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.assignment.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.comparison.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.dereference.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.increment-decrement.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.logical.java { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.type.primitive.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.type.primitive.array.java { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.function.js { font-weight: bold; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.type.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.modifier.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.storage.type.function.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.language.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.language.boolean.true.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.language.boolean.false.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.language.null.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.variable.language.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.reserved.js { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.js { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.other.directive.jsp { font-weight: bold; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.keyword.operator.assignment.jsp { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.other.directive.attribute.jsp { color: rgba(0, 153, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.entity.name.filename.todo-list { color: rgba(0, 0, 230, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.numeric.item-number.todo-list { color: rgba(153, 0, 153, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.constant.numeric.line-number.todo-list { color: rgba(153, 0, 153, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .monaco-editor-background { background-color: rgba(238, 238, 238, 0.92); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .glyph-margin { background-color: rgba(238, 238, 238, 0.92); }
+    .vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(238, 238, 238, 0.92); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token { color: rgba(0, 0, 0, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .focused .selected-text { background-color: rgba(186, 214, 253, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .selected-text { background-color: rgba(186, 214, 253, 0.5); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .current-line { background-color: rgba(0, 0, 0, 0.1); border:0; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .cursor { background-color: rgba(0, 0, 0, 1); border-color: rgba(0, 0, 0, 1); color: rgba(255, 255, 255, 1); }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .token.whitespace { color: rgba(179, 179, 179, 0.96) !important; }
+    .monaco-editor.vs.gerane-Theme-NetBeans-themes-NetBeans-tmTheme .lines-content .cigr { background: rgba(179, 179, 179, 0.96); }

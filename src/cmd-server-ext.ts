@@ -9,24 +9,16 @@ export class CmdServerExt {
 
   public start() {
     this.server = http.createServer(function (req, res) {
-      // res.write('Hi there man from UNCLE')
       var theme = req.url.split('=')[1];
-      console.log('cmd-server-ext: theme=' + theme);
       var workspaceConfig: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
       var mtaVscode: any = workspaceConfig.get('mta-vscode')
-      console.log('mta-vs: mta-vscode.themeDir=' + mtaVscode.themeDir)
 
       let localThemeManagerExt = new LocalThemeManagerExt({
         themeDir: mtaVscode.themeDir
       })
 
-      // var theme = 'red';
       var themeInfo = localThemeManagerExt.getThemeInfo(theme);
-      // res.end('Hi there man from UNCLE2')
-      // res.end(themeInfo.dom_text);
-      //res.end(YAML.stringify(themeInfo));
       res.end(JSON.stringify(themeInfo));
-      // res.end
     })
 
     // determine what port we should start on
