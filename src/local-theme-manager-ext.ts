@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import {window, commands, Disposable, ExtensionContext, 
+import {window, commands, Disposable, ExtensionContext,
   StatusBarAlignment, StatusBarItem, TextDocument, extensions} from 'vscode';
 import * as fs from "fs-extra";
 import * as YAML from "yamljs";
@@ -14,14 +14,14 @@ export interface ThemeInfo  {
 export class LocalThemeManagerExt {
     // dependencies
     private fs : any; //works
-    private YAML: any;    
+    private YAML: any;
     public themeDir: string
     private cmdChannel : StatusBarItem
     public mtaExtension
-    
+
     constructor(params) {
       this.fs = params.fs || fs;
-      this.YAML = params.YAML || YAML; 
+      this.YAML = params.YAML || YAML;
       // Note: this is defunct. replace by mtaExtension.extensionPath
       this.themeDir = params.themeDir;
       this.mtaExtension = vscode.extensions.getExtension('vt5491.mta-vs')
@@ -31,7 +31,7 @@ export class LocalThemeManagerExt {
       }
     }
 
-    public doIt() : number { 
+    public doIt() : number {
       return 7;
     }
 
@@ -67,6 +67,18 @@ export class LocalThemeManagerExt {
         }
       }
 
+      // //vt add
+      // // add the files under 'light_themes' as well
+      // fileList = fs.readdirSync(this.getThemeDir() + '/light_themes');
+      // console.log('getThemeList: fileList (light)=' + fileList);
+      //
+      // for( var i=0; i < fileList.length; i++) {
+      //   if( fileList[i].match(/\.yml/)) {
+      //     var themeName = fileList[i].replace(/\.yml/, '')
+      //     themeList.push( 'light_themes/' + themeName);
+      //   }
+      // }
+      //vt end
       return themeList
     }
 
@@ -74,6 +86,6 @@ export class LocalThemeManagerExt {
       var themeDir = this.mtaExtension.extensionPath.replace(/\\/g, "/");
 
       // normalize to unix conventions
-      return themeDir + '/dom-text-themes/' 
+      return themeDir + '/dom-text-themes/'
     }
 }

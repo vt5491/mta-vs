@@ -1,0 +1,73 @@
+display_name : Choco 
+class_name : choco
+class_name_fq : vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme
+dom_text : >
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.comment { color: rgba(103, 157, 71, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.constant { color: rgba(218, 86, 89, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.entity { color: rgba(109, 76, 47, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.keyword { color: rgba(179, 147, 92, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.storage { color: rgba(241, 230, 148, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string { color: rgba(124, 165, 99, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.support { color: rgba(168, 121, 156, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.variable { color: rgba(121, 137, 166, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.invalid.deprecated { font-style: italic; text-decoration: underline; color: rgba(210, 168, 161, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.invalid.illegal { color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.text.source {  }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.text.html.ruby.source {  }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.entity.other.inherited-class { color: rgba(155, 92, 46, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.source { color: rgba(218, 239, 163, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.constant { color: rgba(221, 242, 164, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.regexp { color: rgba(233, 192, 98, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.regexp.constant.character.escape { color: rgba(207, 125, 52, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.regexp.source.ruby.embedded { color: rgba(207, 125, 52, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.regexp.string.regexp.arbitrary-repitition { color: rgba(207, 125, 52, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.string.variable { color: rgba(94, 130, 141, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.support.function { color: rgba(194, 152, 99, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.support.constant { color: rgba(215, 114, 97, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.preprocessor.c { color: rgba(137, 150, 168, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.preprocessor.c.keyword { color: rgba(175, 196, 219, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.sgml.doctype { color: rgba(73, 73, 73, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.sgml.doctype.entity { color: rgba(73, 73, 73, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.sgml.doctype.string { color: rgba(73, 73, 73, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.preprocessor.xml { color: rgba(73, 73, 73, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.preprocessor.xml.entity { color: rgba(73, 73, 73, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.preprocessor.xml.string { color: rgba(73, 73, 73, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.declaration.tag { color: rgba(159, 120, 91, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.declaration.tag.entity { color: rgba(159, 120, 91, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag { color: rgba(159, 120, 91, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.entity { color: rgba(159, 120, 91, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.declaration.tag.inline { color: rgba(200, 165, 115, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.declaration.tag.inline.entity { color: rgba(200, 165, 115, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.source.entity.name.tag { color: rgba(200, 165, 115, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.source.entity.other.attribute-name { color: rgba(200, 165, 115, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.inline { color: rgba(200, 165, 115, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.tag.inline.entity { color: rgba(200, 165, 115, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.selector.css.entity.name.tag { color: rgba(180, 143, 98, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.selector.css.entity.other.attribute-name.tag.pseudo-class { color: rgba(153, 157, 99, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.selector.css.entity.other.attribute-name.id { color: rgba(118, 144, 164, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.selector.css.entity.other.attribute-name.class { color: rgba(121, 166, 96, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.support.type.property-name.css { color: rgba(175, 151, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.property-group.support.constant.property-value.css { color: rgba(211, 203, 161, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.property-value.support.constant.property-value.css { color: rgba(211, 203, 161, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.preprocessor.at-rule.keyword.control.at-rule { color: rgba(134, 147, 165, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.property-value.support.constant.named-color.css { color: rgba(201, 88, 79, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.property-value.constant { color: rgba(201, 88, 79, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.constructor.argument.css { color: rgba(143, 157, 106, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.diff { font-style: italic; color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.diff.header { font-style: italic; color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.meta.separator { font-style: italic; color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.markup.deleted { color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.markup.changed { color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.markup.inserted { color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.markup.list { color: rgba(249, 238, 152, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.markup.heading { color: rgba(207, 106, 76, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .monaco-editor-background { background-color: rgba(24, 12, 12, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .glyph-margin { background-color: rgba(24, 12, 12, 1); }
+    .vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(24, 12, 12, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token { color: rgba(195, 190, 152, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .cursor { background-color: rgba(167, 167, 167, 1); border-color: rgba(167, 167, 167, 1); color: rgba(88, 88, 88, 1); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .token.whitespace { color: rgba(255, 255, 255, 0.25) !important; }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .lines-content .cigr { background: rgba(255, 255, 255, 0.25); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .current-line { background-color: rgba(255, 156, 117, 0.13); border: none; }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .focused .selected-text { background-color: rgba(221, 240, 255, 0.38); }
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Choco-themes-Choco-tmTheme .selected-text { background-color: rgba(221, 240, 255, 0.19); }

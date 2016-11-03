@@ -1,0 +1,73 @@
+display_name : vs_Paraiso_light 
+class_name : vs_paraiso_light
+class_name_fq : vscode-theme-gerane-Theme-Humane-themes-Humane-tmTheme
+dom_text : >
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.variable.parameter.function { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.comment { color: rgba(141, 134, 135, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.comment { color: rgba(141, 134, 135, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.string { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.variable { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.string { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.parameters { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.string { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.array { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.none { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.keyword.operator { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.keyword { color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.keyword.control { color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.variable { color: rgba(239, 97, 85, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.name.function { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.meta.require { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.support.function.any-method { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.meta.class { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.support.class { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.name.class { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.name.type.class { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.keyword.other.special-method { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.storage { color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.support.function { color: rgba(91, 196, 191, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.string { color: rgba(72, 182, 133, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.constant.other.symbol { color: rgba(72, 182, 133, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.other.inherited-class { color: rgba(72, 182, 133, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.constant.numeric { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.none { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.none { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.constant { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.name.tag { color: rgba(239, 97, 85, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.other.attribute-name { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.other.attribute-name.id { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.entity { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.meta.selector { color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.none { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.heading.punctuation.definition.heading { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.entity.name.section { color: rgba(6, 182, 239, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.keyword.other.unit { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.bold { font-weight: bold; color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.bold { font-weight: bold; color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.italic { font-style: italic; color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.definition.italic { font-style: italic; color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.raw.inline { color: rgba(72, 182, 133, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.string.other.link { color: rgba(239, 97, 85, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.meta.link { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.list { color: rgba(239, 97, 85, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.quote { color: rgba(249, 155, 21, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.meta.separator { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.inserted { color: rgba(72, 182, 133, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.deleted { color: rgba(239, 97, 85, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.markup.changed { color: rgba(129, 91, 164, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.constant.other.color { color: rgba(91, 196, 191, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.string.regexp { color: rgba(91, 196, 191, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.constant.character.escape { color: rgba(91, 196, 191, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.punctuation.section.embedded { color: rgba(158, 201, 49, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.variable.interpolation { color: rgba(158, 201, 49, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.invalid.illegal { color: rgba(231, 233, 219, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .monaco-editor-background { background-color: rgba(231, 233, 219, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .glyph-margin { background-color: rgba(231, 233, 219, 1); }
+    .vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(231, 233, 219, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token { color: rgba(79, 66, 76, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .cursor { background-color: rgba(79, 66, 76, 1); border-color: rgba(79, 66, 76, 1); color: rgba(176, 189, 179, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .token.whitespace { color: rgba(185, 182, 176, 1) !important; }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .lines-content .cigr { background: rgba(185, 182, 176, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .current-line { background-color: rgba(185, 182, 176, 1); border: none; }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .focused .selected-text { background-color: rgba(185, 182, 176, 1); }
+    .monaco-editor.vs.vscode-theme-gerane-Theme-Paraisolight-themes-Paraiso_light-tmTheme .selected-text { background-color: rgba(185, 182, 176, 0.5); }

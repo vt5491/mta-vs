@@ -1,0 +1,25 @@
+display_name : vs_Summerfruit 
+class_name : vs_summerfruit
+class_name_fq : vscode-theme-gerane-Theme-Humane-themes-Humane-tmTheme
+dom_text : >
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.comment { color: rgba(34, 162, 31, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.constant { color: rgba(21, 134, 210, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.entity { color: rgba(24, 24, 24, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.keyword { color: rgba(251, 102, 32, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.storage { color: rgba(252, 23, 133, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.string { color: rgba(21, 134, 210, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.support { color: rgba(226, 0, 114, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.variable { color: rgba(252, 23, 133, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.invalid { color: rgba(248, 248, 248, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.entity.name.tag { color: rgba(249, 38, 114, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.entity.other.attribute-name { color: rgba(166, 226, 46, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .monaco-editor-background { background-color: rgba(253, 253, 253, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .glyph-margin { background-color: rgba(253, 253, 253, 1); }
+    .vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(253, 253, 253, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token { color: rgba(24, 24, 24, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .cursor { background-color: rgba(24, 24, 24, 1); border-color: rgba(24, 24, 24, 1); color: rgba(231, 231, 231, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .token.whitespace { color: rgba(187, 187, 187, 1) !important; }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .lines-content .cigr { background: rgba(187, 187, 187, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .current-line { background-color: rgba(255, 255, 255, 0.05); border: none; }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .focused .selected-text { background-color: rgba(183, 220, 232, 1); }
+    .monaco-editor.vs.vscode-theme-asethi77-theme-summerfruit-themes-Summerfruit-tmTheme .selected-text { background-color: rgba(183, 220, 232, 0.5); }
