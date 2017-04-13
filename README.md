@@ -17,6 +17,13 @@ It allows for file level theming.
 python -m SimpleHTTPServer (python 2.x) (linux)  
 python -m http.server  (python 3.x) (windows)  
 
+To start as a remote server:  
+`python -c 'import BaseHTTPServer as bhs, SimpleHTTPServer as shs; bhs.HTTPServer(("0.0.0.0", 8888), shs.SimpleHTTPRequestHandler).serve_forever()'
+`  
+
+To start on a different port:    
+`python -m SimpleHTTPServer 8001`  
+
 Note: themes starting with 'vs_' are light themes.  Currently, you cannot mix and match light and
 dark themes.  If you want to get into light theme mode, do ctrl-shift-p and apply light+ (default
 theme) as the starting theme.  You may also need to do a ctrl-r from the javascript console as well.
