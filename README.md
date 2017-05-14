@@ -28,30 +28,15 @@ Note: themes starting with 'vs_' are light themes.  Currently, you cannot mix an
 dark themes.  If you want to get into light theme mode, do ctrl-shift-p and apply light+ (default
 theme) as the starting theme.  You may also need to do a ctrl-r from the javascript console as well.
 
-1) Install Jquery into the console:  
-
-fetch('http://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r => {eval(r); eval(r);});
-
-2) Install the user libraries from the JS console:  
+1) Install Jquery and user libraries into the console:  
 
 `
-document.MTA_VS = {};  
-$.when(
-    fetch('http://localhost:8000/editor-theme-change-listener.js').then(r => r.text()).then(r => eval(r)),
-    fetch('http://localhost:8000/local-theme-manager-native.js').then(r => r.text()).then(r => eval(r)),
-    fetch('http://localhost:8000/mta-vs-native.js').then(r => r.text()).then(r => eval(r))
-    )
-    .done(function(first_call, second_call, third_call){
-      console.log('all loaded');
-    })
-    .fail(function(){
-      console.log('load failed');
-    });
+fetch('http://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r => {eval(r); eval(r);}).then( r => {document.MTA_VS = {}; $.when( fetch('http://localhost:8000/editor-theme-change-listener.js').then(r => r.text()).then(r => eval(r)), fetch('http://localhost:8000/local-theme-manager-native.js').then(r => r.text()).then(r => eval(r)), fetch('http://localhost:8000/mta-vs-native.js').then(r => r.text()).then(r => eval(r)) ) .done(function(first_call, second_call, third_call){ console.log('all loaded'); }) .fail(function(){ console.log('load failed'); });})
 `
 
-3) Invoke theme dropdown with either ctrl-shift-v or selecting *mta* from the main command prompt (ctlr-shift-p)
+2) Invoke theme dropdown with either ctrl-shift-v or selecting *mta* from the main command prompt (ctlr-shift-p)
 
-4) apply your themes on a file by file basis.
+3) apply your themes on a file by file basis.
 
 ## Requirements
 
