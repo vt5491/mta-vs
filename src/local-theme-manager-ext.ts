@@ -3,6 +3,13 @@ import {window, commands, Disposable, ExtensionContext,
   StatusBarAlignment, StatusBarItem, TextDocument, extensions} from 'vscode';
 import * as fs from "fs-extra";
 import * as YAML from "yamljs";
+//vt add
+// var app = require('app');
+// import * as app from 'app';
+// var BrowserWindow = require('browser-window')
+// const {BrowserWindow} = require('electron');
+// var ipc = require('ipc');
+//vt end
 
 export interface ThemeInfo  {
     display_name: string;
@@ -20,6 +27,9 @@ export class LocalThemeManagerExt {
     public mtaExtension
 
     constructor(params) {
+      //vt add
+      console.log(`LocalThemeManagerExt.ctor: entered`);
+      //vt end
       this.fs = params.fs || fs;
       this.YAML = params.YAML || YAML;
       // Note: this is defunct. replace by mtaExtension.extensionPath
@@ -29,6 +39,9 @@ export class LocalThemeManagerExt {
       if (!this.cmdChannel) {
         this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
       }
+      //vt add
+      this.addActiveEditorChangeListener();
+      //vt end
     }
 
     public doIt() : number {
@@ -45,6 +58,25 @@ export class LocalThemeManagerExt {
           this.cmdChannel.show();
         });
     }
+
+    //vt add
+    // add a listener for 'onDidChangeActiveTextEditor'
+    addActiveEditorChangeListener() {
+      console.log(`LocalThemeManagerExt.addActiveEditorChangeLister: entered`);
+      
+      vscode.window.onDidChangeActiveTextEditor(
+        (event) => {
+          console.log(`LocalThemeManagerExt: active editor changed, event.id=${event.id}`);
+          console.log(`LocalThemeManagerExt: activeEditor=${vscode.window.activeTextEditor}`);
+          // debugger;
+          // Update the status bar
+          this.cmdChannel.text = `Event: activeEditorChange`
+          this.cmdChannel.show();
+       })
+    } 
+
+    //vt end
+    //Getters and Setters
 
     public getThemeInfo(theme) : ThemeInfo {
       let themeInfo : ThemeInfo
@@ -66,20 +98,7 @@ export class LocalThemeManagerExt {
           themeList.push( themeName)
         }
       }
-
-      // //vt add
-      // // add the files under 'light_themes' as well
-      // fileList = fs.readdirSync(this.getThemeDir() + '/light_themes');
-      // console.log('getThemeList: fileList (light)=' + fileList);
-      //
-      // for( var i=0; i < fileList.length; i++) {
-      //   if( fileList[i].match(/\.yml/)) {
-      //     var themeName = fileList[i].replace(/\.yml/, '')
-      //     themeList.push( 'light_themes/' + themeName);
-      //   }
-      // }
-      //vt end
-      return themeList
+      return themeList;
     }
 
     public getThemeDir() {

@@ -43,8 +43,10 @@ fetch('http://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Known Issues
+2016-05-18:
+1. If you ever reset the base vscode theme (using "Set Theme" from the global pallet, and not from mta-vs), you may reset the global theme to a theme that does not start with 'vscode_theme'.  Whenever you start vscode, the physical DOM is initially primed with whatever global theme you last used (and if you always only apply local themes, you may have last set the global theme six months ago).  When you then invoke mta-vs and apply a local theme, it goes to the physical DOM and replaces the class name on a few key dom elements with the new name.  However, it appears to only do this against the "soft" DOM.  That is to say the physical "hard" DOM still stays with the seed global theme.  This is fine, but the regex code expects the seed global DOM to start with 'vscode_theme'.  If you globally apply a theme that doesn't start with "vscode_theme" (which is a lot of them), you've now screwed up the seed environment and the regex won't match, and local themes will not be applied.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Bottom Line is to seed with either "Dark+(default theme)" or the Default light theme _always_ because they start with 'vscode_theme'. You may run into this situation if you want to test out a new theme, but don't want to create the custom .yml file (by going into the DOM header and pulling out the parsed style info and putting into the github dir 'dom-text-themes') until you're sure you like it, and then you forget to reset it back to Dark+ or Light+
 
 ## Release Notes
 

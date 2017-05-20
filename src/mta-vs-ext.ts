@@ -28,7 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
         // check if the server is active. 
         // if not start it up ourselves, so the user doesn't have to manually start
         if (!mtaServerActive) {
-            console.log('mta-vs: now starting cmdServerExt automatically')
+            console.log('mta-vs: Now starting cmdServerExt.')
             let cmdServerExt = new CmdServerExt()
 
             mtaServerActive = true;

@@ -26,6 +26,12 @@ export class CmdServerExt {
     var mtaVscode : any = workspaceConfig.get('mta-vscode')
     console.log('mta-vs: mta-vscode.server.port=' + mtaVscode.server.port)
     var port = mtaVscode.server.port || 3000;
-    this.server.listen(port)
+    //vt add
+    this.server.on('error', (e) => {
+      console.log(`CmdServerExt.start: error:${e}`);
+    });
+    this.server.listen(port);
+    //vt end
+    // this.server.listen(port)
   }
 }
