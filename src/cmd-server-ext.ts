@@ -27,10 +27,16 @@ export class CmdServerExt {
     console.log('mta-vs: mta-vscode.server.port=' + mtaVscode.server.port)
     var port = mtaVscode.server.port || 3000;
     //vt add
+    var workspaceConfig: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
+    var mtaVscode: any = workspaceConfig.get('mta-vscode')
+    let localThemeManagerExt = new LocalThemeManagerExt({
+      themeDir: mtaVscode.themeDir
+    });
     this.server.on('error', (e) => {
       console.log(`CmdServerExt.start: error:${e}`);
     });
-    this.server.listen(port);
+    //vt this.server.listen(port);
+    this.server.listen(port, function(){localThemeManagerExt.setDefaultTheme()});
     //vt end
     // this.server.listen(port)
   }

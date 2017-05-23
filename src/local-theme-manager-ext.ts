@@ -41,6 +41,13 @@ export class LocalThemeManagerExt {
       }
       //vt add
       this.addActiveEditorChangeListener();
+
+      //set the default theme
+      // console.log(`LocalThemeManagerExt.ctor: setting default theme`);
+      // let defaultTheme = 'vs_light_plus';
+      // // defaultTheme += ".yml";
+      // this.cmdChannel.text = `setDefaultTheme: ${defaultTheme}`;
+      // this.cmdChannel.show();
       //vt end
     }
 
@@ -53,9 +60,15 @@ export class LocalThemeManagerExt {
       var themeList = this.getThemeList()
       vscode.window.showQuickPick(themeList)
         .then(val => {
-          // Update the status bar
-          this.cmdChannel.text = `Theme: ${val}`
-          this.cmdChannel.show();
+          //vt add
+          if (val) {
+            //vt end
+            // Update the status bar
+            this.cmdChannel.text = `Theme: ${val}`
+            this.cmdChannel.show();
+          //vt add
+          }
+          //vt end
         });
     }
 
@@ -107,4 +120,18 @@ export class LocalThemeManagerExt {
       // normalize to unix conventions
       return themeDir + '/dom-text-themes/'
     }
+
+    //vt add
+    public setDefaultTheme() {
+      //set the default theme
+      console.log(`LocalThemeManagerExt.setDefaultTheme: setting default theme`);
+      let defaultTheme = 'vs_light_plus';
+      // defaultTheme += ".yml";
+      if (!this.cmdChannel) {
+        this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
+      };
+      this.cmdChannel.text = `setDefaultTheme: ${defaultTheme}`;
+      this.cmdChannel.show();
+    }
+    //vt end
 }
