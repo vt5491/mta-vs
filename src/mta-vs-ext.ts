@@ -9,6 +9,8 @@ import {CmdServerExt} from './cmd-server-ext';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
+    console.log(`MtaVsExt.activate: __dirname=${__dirname}`);
+    
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
     var workspaceConfig : vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration()
@@ -16,7 +18,10 @@ export function activate(context: vscode.ExtensionContext) {
     var mtaServerActive: boolean = false;
 
     let localThemeManagerExt = new LocalThemeManagerExt({
-        themeDir : mtaVscode.themeDir
+        themeDir : mtaVscode.themeDir,
+        //vt add
+        storagePath : context.storagePath 
+        //vt end
     })
 
     // The command has been defined in the package.json file

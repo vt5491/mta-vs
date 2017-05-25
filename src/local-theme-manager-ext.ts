@@ -2,6 +2,10 @@ import * as vscode from 'vscode';
 import {window, commands, Disposable, ExtensionContext,
   StatusBarAlignment, StatusBarItem, TextDocument, extensions} from 'vscode';
 import * as fs from "fs-extra";
+//vt add
+// import {join} from 'path';
+import * as path from 'path';
+//vt end
 import * as YAML from "yamljs";
 //vt add
 // var app = require('app');
@@ -25,10 +29,15 @@ export class LocalThemeManagerExt {
     public themeDir: string
     private cmdChannel : StatusBarItem
     public mtaExtension
+    //vt add
+    public storagePath : string
+    // private path : any;
+    //vt end
 
     constructor(params) {
       //vt add
       console.log(`LocalThemeManagerExt.ctor: entered`);
+      console.log(`LocalThemeManagerExt.ctor: storagePath=${params.storagePath}`);
       //vt end
       this.fs = params.fs || fs;
       this.YAML = params.YAML || YAML;
@@ -42,6 +51,10 @@ export class LocalThemeManagerExt {
       //vt add
       this.addActiveEditorChangeListener();
 
+      //vt add
+      this.storagePath = params.storagePath;
+      this.getMtaVsPersistenceFile();
+      //vt end
       //set the default theme
       // console.log(`LocalThemeManagerExt.ctor: setting default theme`);
       // let defaultTheme = 'vs_light_plus';
@@ -125,7 +138,15 @@ export class LocalThemeManagerExt {
     public setDefaultTheme() {
       //set the default theme
       console.log(`LocalThemeManagerExt.setDefaultTheme: setting default theme`);
-      let defaultTheme = 'vs_light_plus';
+      // let defaultTheme = 'vs_light_plus';
+      const workbenchConfig = vscode.workspace.getConfiguration('workbench')
+      let defaultTheme = workbenchConfig.get('colorTheme')
+
+      if (defaultTheme === 'Default Light+') {
+        defaultTheme = 'vs_light_plus';
+      }
+      console.log(`LocalThemeManagerExt.setDefaultTheme: official theme=${defaultTheme}`);
+      
       // defaultTheme += ".yml";
       if (!this.cmdChannel) {
         this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
@@ -133,5 +154,39 @@ export class LocalThemeManagerExt {
       this.cmdChannel.text = `setDefaultTheme: ${defaultTheme}`;
       this.cmdChannel.show();
     }
+
+    // this function returns the path to the .mta-vs file.  If the file does not
+    // exist, it will create one.  By abstracting this out as a separate function,
+    // this allows us to have one place that is repsonsible for the 'policy' of this
+    // file i.e it's location.  If we ever decide to alter this policy, then we
+    // only need to update this one function and not (potentially) ten places in the
+    // code where we have, for example, the default path hard-coded.
+    getMtaVsPersistenceFile() {
+      let mtavsFn = '';
+      console.log(`LocalThemeManagerExt.getMtaVsPersistenceFile: entered`);
+      console.log(`LocalThemeManagerExt.getMtaVsPersistenceFile: storagePath=${this.storagePath}`);
+      // console.log(`__dirname=${__dirname}`);
+
+      // mtavsFn = __dirname;
+      mtavsFn = path.join(this.storagePath, '.mta-vs');
+      // mtavsFn = this.storagePath + '\\.mta-vs';
+      console.log(`LocalThemeManagerExt.getMtaVsPersistenceFile: mtavsFn=${mtavsFn}`);
+      
+      if (!fs.existsSync(mtavsFn)) {
+        fs.createFileSync(mtavsFn)
+      }
+
+      return mtavsFn;
+
+    }
+
+    // persist the current themeInfo to '.mta-vs.json' in the current dir, so
+    // we can restore themes upon restart.
+    persistThemeInfo(themeInfo) {
+      let persistanceFile = this.getMtaVsPersistenceFile();
+
+      fs.writeJsonSync(persistanceFile, themeInfo);
+    }
+
     //vt end
 }

@@ -1,4 +1,4 @@
-// 
+//
 // Note: This example test is leveraging the Mocha test framework.
 // Please refer to their documentation on https://mochajs.org/ for help.
 //
@@ -10,9 +10,15 @@ import * as YAML from "yamljs";
 // as well as import your mta-vs to test it
 import * as vscode from 'vscode';
 import {LocalThemeManagerExt} from '../../src/local-theme-manager-ext';
+//vt add
+// import {LocalThemeManagerNative} from '../../lib/local-theme-manager-native';
+//vt end
 import {ThemeInfo} from '../../src/local-theme-manager-ext';
 import { expect } from 'chai';
 import * as fs from "fs-extra"; //works
+//vt add
+import * as path from "path";
+//vt end
 import * as sinon from "sinon";
 
 // Defines a Mocha test suite to group tests of similar kind together
@@ -28,22 +34,37 @@ import * as sinon from "sinon";
 
 describe('simple test', () => {
   var localThemeManagerExt : LocalThemeManagerExt;
-  var sandbox; 
+  // var localThemeManagerNative : LocalThemeManagerNative;
+  var sandbox;
   var mockYAML;
   var mockFs;
-  var testThemeDir = '/tmp/themes/'
+  var testThemeDir = '/tmp/themes/';
+  // var storagePath = '/vtstuff/tmp/storagePath';
+  // var storagePath = path.join( __dirname , '../../test/tmp/storagePath');
+  var storagePath = path.join( __dirname , '../../../test/tmp/storagePath');
+  // var storagePath = path.normalize( __dirname + '/../../test/tmp/storagePath');
+  // var storagePath =  __dirname + '\\..\\..\\test\\tmp\\storagePath';
+  console.log(`ut: storagePath=${storagePath}`);
+  //vt add
+  let themeInfo : ThemeInfo;
+  //vt end
 
   before(() => {
+    //vt add
+    console.log(`ut: cwd=${process.cwd()}`)
+    console.log(`ut: __dirname=${__dirname}`)
+    //vt end
     let params = {}
-    
-    var themeInfo : ThemeInfo =  {
+
+    // themeInfo : ThemeInfo =  {
+    themeInfo =  {
       'display_name' : 'Kimbie Dark' ,
       'class_name' : 'kimbie_dark',
-      'class_name_fq' : 'vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme.yml',  
+      'class_name_fq' : 'vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme.yml',
       'dom_text' : `
     .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.variable.parameter.function { color: rgba(211, 175, 134, 1); }
     .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.comment { color: rgba(165, 122, 76, 1); }
-    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.comment { color: rgba(165, 122, 76, 1); } 
+    .monaco-editor.vs-dark.vscode-theme-kimbie-dark-themes-Kimbie_dark-tmTheme .token.punctuation.definition.comment { color: rgba(165, 122, 76, 1); }
     `
     };
 
@@ -52,7 +73,7 @@ describe('simple test', () => {
    try {
    mockYAML = sandbox.stub(YAML, "load")
     .withArgs(testThemeDir + 'kimbie_dark.yml')
-    .returns(themeInfo) 
+    .returns(themeInfo)
    }
    catch(e){
      console.log('caught error: ' + e)
@@ -60,7 +81,7 @@ describe('simple test', () => {
 
    try {
    mockFs = sandbox.stub(fs, "readdirSync")
-    .returns(['kimbie_dark.yml', 'red.yml', 'vt_note.txt']) 
+    .returns(['kimbie_dark.yml', 'red.yml', 'vt_note.txt'])
    }
    catch(e){
      console.log('caught error: ' + e)
@@ -69,9 +90,13 @@ describe('simple test', () => {
     params['YAML'] = mockYAML
     params['fs'] = mockFs;
     params['themeDir'] = '/tmp/dummy'
+    //vt add
+    params['storagePath'] = storagePath;
+    //vt end
 
     localThemeManagerExt = new LocalThemeManagerExt(params);
-  })  
+    // localThemeManagerNative = document.LocalThemeManagerNative;
+  })
 
   after(() => {
     sandbox.restore()
@@ -79,7 +104,7 @@ describe('simple test', () => {
 
   it('is an instance of the proper type', () => {
     assert(localThemeManagerExt instanceof LocalThemeManagerExt)
-  });  
+  });
 
   it('has an mtaExtension instance variable', () => {
     expect(localThemeManagerExt).to.have.property('mtaExtension');
@@ -112,4 +137,42 @@ describe('simple test', () => {
     let themeList : string[] = localThemeManagerExt.getThemeList()
     expect(themeList.length).to.equal(2)
   })
+
+  //vt add
+  it('getMtaVsPersistenceFile creates a .mta-vs file if one does not exists', () => {
+    // clear out any prior storagPath .mta-vs file
+    let mtavsFile = path.join(storagePath, '.mta-vs');
+    fs.removeSync(mtavsFile);
+    let persistenceFile = '';
+    persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
+    // persistenceFile = localThemeManagerExt.doIt();
+    // persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
+    // persistenceFile = localThemeManagerNative.persistThemeInfo();
+    console.log(`ut:persistenceFile=${persistenceFile}`);
+    expect(persistenceFile).to.exist
+    expect(persistenceFile).to.be.a('string');
+    expect(fs.existsSync(mtavsFile)).to.be.true;
+
+  });
+
+  it.only('persistThemeInfo writes json properly', () => {
+    let persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
+
+    localThemeManagerExt.persistThemeInfo(themeInfo);
+
+    // read the file
+    let fileThemeInfo = fs.readJsonSync(persistenceFile);
+    // fs.readJson('persistenceFile');
+    // .then(fileThemeInfo => {
+    //   // console.log(packageObj.version) // => 0.1.3
+    //   console.log(`ut:themeInfo.display_name=${fileThemeInfo.display_name}`);
+    // })
+    // .catch(err => {
+    //   console.error(err)
+    // })
+    console.log(`ut:themeInfo.display_name=${fileThemeInfo.display_name}`);
+    expect(fileThemeInfo.display_name).to.equal(themeInfo.display_name);
+
+  })
+  //vt end
 })
