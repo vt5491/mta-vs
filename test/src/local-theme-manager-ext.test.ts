@@ -155,10 +155,10 @@ describe('simple test', () => {
 
   });
 
-  it.only('persistThemeInfo writes json properly', () => {
+  it.only('writeThemeInfo writes json properly', () => {
     let persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
 
-    localThemeManagerExt.persistThemeInfo(themeInfo);
+    localThemeManagerExt.writeThemeInfo(themeInfo);
 
     // read the file
     let fileThemeInfo = fs.readJsonSync(persistenceFile);

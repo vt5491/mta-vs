@@ -50,10 +50,11 @@ export class LocalThemeManagerExt {
       }
       //vt add
       this.addActiveEditorChangeListener();
+      // this.addCloseTerminalListener();
 
       //vt add
       this.storagePath = params.storagePath;
-      this.getMtaVsPersistenceFile();
+      // this.getMtaVsPersistenceFile();
       //vt end
       //set the default theme
       // console.log(`LocalThemeManagerExt.ctor: setting default theme`);
@@ -101,7 +102,33 @@ export class LocalThemeManagerExt {
        })
     } 
 
+    // addCloseTerminalListener() {
+    //   vscode.window.onDidCloseTerminal(
+    //     (event) => {
+    //       console.log(`LocalThemeManagerExt.onDidCloseTerminal: now handling event ${event}`);
+          
+    //     }
+    //   )
+    // }
+
     //vt end
+
+    //vt add
+    public deactivate() {
+      console.log(`LocalThemeManager.deactivate: entered`);
+      // Update the status bar
+      // the following causes 'cmd-channel-listener-native' to drive
+      // cmd-server-ext.ts to fire off the server with a post of 'themeInfo=blah'.
+      // then cmd-server call writeThemeInfo in localThemeManagerExt (e.g this module)
+      // So it all come back full circle to this module.
+      this.cmdChannel.text = `getThemeInfo`
+      this.cmdChannel.show();
+
+      //note we get the response (themeInfo JSON) in CmdServerExt under the start().createServer() function
+      
+    }
+    //vt end
+
     //Getters and Setters
 
     public getThemeInfo(theme) : ThemeInfo {
@@ -182,7 +209,7 @@ export class LocalThemeManagerExt {
 
     // persist the current themeInfo to '.mta-vs.json' in the current dir, so
     // we can restore themes upon restart.
-    persistThemeInfo(themeInfo) {
+    writeThemeInfo(themeInfo) {
       let persistanceFile = this.getMtaVsPersistenceFile();
 
       fs.writeJsonSync(persistanceFile, themeInfo);
