@@ -155,10 +155,12 @@ describe('simple test', () => {
 
   });
 
-  it.only('writeThemeInfo writes json properly', () => {
+  it('writeFileLookup writes json properly', () => {
     let persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
 
-    localThemeManagerExt.writeThemeInfo(themeInfo);
+    // yes, we're testing with a themeInfo structure and not a fileLookup
+    // structure, but it will still allow us to test
+    localThemeManagerExt.writeFileLookup(themeInfo);
 
     // read the file
     let fileThemeInfo = fs.readJsonSync(persistenceFile);

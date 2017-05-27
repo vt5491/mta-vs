@@ -25,6 +25,10 @@ export class CmdServerExt {
       // reqKey = reqKey.replace(/[\\/|\\?]/g,'')
       reqKey = reqKey.replace(/^\/\?/,'')
 
+      //vt add
+      let localThemeManagerExt = MTA_VS.getLocalThemeManagerExt();
+      //vt end
+
       if (reqKey === 'theme') {
       //vt end
         //vt var theme = req.url.split('=')[1];
@@ -42,14 +46,19 @@ export class CmdServerExt {
         // console.log(`CmdServerExt: abc=${abc}`);
         
         // var themeInfo = MTA_VS_localThemeManagerExt.getThemeInfo(theme);
-        let localThemeManagerExt = MTA_VS.getLocalThemeManagerExt();
+        // let localThemeManagerExt = MTA_VS.getLocalThemeManagerExt();
         var themeInfo = localThemeManagerExt.getThemeInfo(theme);
         res.end(JSON.stringify(themeInfo));
       }
-      else if (reqKey === 'themeInfo') {
-        console.log(`CmdServerExt.createServer: now in themeInfo handler`);
-        let localThemeManagerExt = MTA_VS.getLocalThemeManagerExt();
-        localThemeManagerExt.writeThemeInfo(reqValue);
+      else if (reqKey === 'writeFileLookup') {
+        console.log(`CmdServerExt.createServer: now in writeFileLookup handler`);
+        // let localThemeManagerExt = MTA_VS.getLocalThemeManagerExt();
+        localThemeManagerExt.writeFileLookup(reqValue);
+      }
+      else if (reqKey === 'readFileLookup') {
+        console.log(`CmdServerExt.createServer: now in readFileLookup handler`);
+        // res.end(JSON.stringify(localThemeManagerExt.readFileLookup()));
+        res.end(localThemeManagerExt.readFileLookup());
       }
     })
 
@@ -71,7 +80,13 @@ export class CmdServerExt {
     // A listen event is fired whenever the server becomes active for the first time.
     // In other words, this is a one time event, not a recurring event.  Basically think
     // of this as an 'onready' event.
-    this.server.listen(port, function(){localThemeManagerExt.setDefaultTheme()});
+    this.server.listen(port, function(){
+      localThemeManagerExt.setDefaultTheme()
+      // and trigger a cmdChannel event to let native side know the server is
+      // up and to do any server dependent processing, such as loading fileLookup
+      localThemeManagerExt.cmdChannel.text = `Event: cmdServerUp`
+      localThemeManagerExt.cmdChannel.show();
+    });
     //vt end
     // this.server.listen(port)
   }

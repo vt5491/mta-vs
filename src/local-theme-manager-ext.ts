@@ -27,7 +27,7 @@ export class LocalThemeManagerExt {
     private fs : any; //works
     private YAML: any;
     public themeDir: string
-    private cmdChannel : StatusBarItem
+    public cmdChannel : StatusBarItem
     public mtaExtension
     //vt add
     public storagePath : string
@@ -209,10 +209,54 @@ export class LocalThemeManagerExt {
 
     // persist the current themeInfo to '.mta-vs.json' in the current dir, so
     // we can restore themes upon restart.
-    writeThemeInfo(themeInfo) {
+    writeFileLookup(fileLookup) {
       let persistanceFile = this.getMtaVsPersistenceFile();
 
-      fs.writeJsonSync(persistanceFile, themeInfo);
+      // fs.writeJsonSync(persistanceFile, fileLookup);
+      fs.writeFileSync(persistanceFile, fileLookup);
+    }
+
+    // readFileLookup() : string {
+    readFileLookup() : {} {
+      let persistanceFile = this.getMtaVsPersistenceFile();
+
+      if (fs.existsSync(persistanceFile)) {
+        const stats = fs.statSync(persistanceFile)
+        const fileSizeInBytes = stats.size
+
+        if (fileSizeInBytes > 0) {
+          // let s = fs.readJsonSync(persistanceFile);// crashes
+          let s = fs.readFileSync(persistanceFile).toString();
+          // s = s.replace(/\\n/g, "\\n")  
+          //      .replace(/\\'/g, "\\'")
+          //      .replace(/\\"/g, '\\"')
+          //      .replace(/\\&/g, "\\&")
+          //      .replace(/\\r/g, "\\r")
+          //      .replace(/\\t/g, "\\t")
+          //      .replace(/\\b/g, "\\b")
+          //      .replace(/\\f/g, "\\f");
+          // // remove non-printable and other non-valid JSON chars
+          // s = s.replace(/[\u0000-\u0019]+/g, ""); 
+          // return fs.readFileSync(persistanceFile);
+          return s;
+        }
+      }
+
+      // return null;
+      // fs.stat(persistanceFile, function (err, stat) {
+      //   if (err == null) {
+      //     return fs.readJsonSync(persistanceFile);
+      //   } else if (err.code == 'ENOENT') {
+      //     // file does not exist
+      //     // fs.writeFile('log.txt', 'Some log\n');
+      //     return '';
+      //   } else {
+      //     console.log('LocalThemeManagerExt.readFileLookup: ', err.code);
+      //   }
+      // });
+
+      return JSON.stringify({});
+      // return JSON.parse('{}');
     }
 
     //vt end
