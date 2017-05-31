@@ -1,61 +1,61 @@
-display_name : Dracula 
+.vscode-theme-draculadisplay_name : Dracula
 class_name : dracula
-class_name_fq : dracula-theme-theme-dracula-themes-Dracula-tmTheme  
+class_name_fq : vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme
 dom_text : >
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.comment { color: rgba(98, 114, 164, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.string { color: rgba(241, 250, 140, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.numeric { color: rgba(189, 147, 249, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.language { color: rgba(189, 147, 249, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.character { color: rgba(189, 147, 249, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.other { color: rgba(189, 147, 249, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.variable {  }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.variable.other.readwrite.instance { color: rgba(255, 184, 108, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.character.escaped { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.character.escape { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.string.source { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.string.source.ruby { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.keyword { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.storage { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.storage.type { font-style: italic; color: rgba(139, 233, 253, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.class { text-decoration: underline; color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.other.inherited-class { color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.function { color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.variable.parameter { font-style: italic; color: rgba(255, 184, 108, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.tag { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.other.attribute-name { color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.function { color: rgba(139, 233, 253, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.constant { color: rgba(107, 229, 253, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.type { color: rgba(102, 217, 239, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.class { color: rgba(102, 217, 239, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.other.variable {  }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.invalid { color: rgba(248, 248, 240, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.invalid.deprecated { color: rgba(248, 248, 240, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.structure.dictionary.json.string.quoted.double.json { color: rgba(207, 207, 194, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.diff { color: rgba(98, 114, 164, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.diff.header { color: rgba(98, 114, 164, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.markup.deleted { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.markup.inserted { color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.markup.changed { color: rgba(230, 219, 116, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.numeric.line-number.find-in-files.-.match { color: rgba(189, 147, 249, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.filename { color: rgba(230, 219, 116, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.message.error { color: rgba(248, 51, 51, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.punctuation.definition.string.begin.json.-.meta.structure.dictionary.value.json { color: rgba(238, 238, 238, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.punctuation.definition.string.end.json.-.meta.structure.dictionary.value.json { color: rgba(238, 238, 238, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.structure.dictionary.json.string.quoted.double.json { color: rgba(139, 233, 253, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.structure.dictionary.value.json.string.quoted.double.json { color: rgba(241, 250, 140, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(255, 184, 108, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(255, 121, 198, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(189, 147, 249, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.structure.dictionary.value.string { color: rgba(80, 250, 123, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.structure.dictionary.value.string { color: rgba(255, 184, 108, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .monaco-editor-background { background-color: rgba(40, 42, 54, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .glyph-margin { background-color: rgba(40, 42, 54, 1); }
-    .vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(40, 42, 54, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token { color: rgba(248, 248, 242, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .focused .selected-text { background-color: rgba(68, 71, 90, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .selected-text { background-color: rgba(68, 71, 90, 0.5); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .current-line { background-color: rgba(68, 71, 90, 1); border:0; }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .cursor { background-color: rgba(248, 248, 240, 1); border-color: rgba(248, 248, 240, 1); color: rgba(7, 7, 15, 1); }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.whitespace { color: rgba(59, 58, 50, 1) !important; }
-    .monaco-editor.vs-dark.dracula-theme-theme-dracula-themes-Dracula-tmTheme .lines-content .cigr { background: rgba(59, 58, 50, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.comment { color: rgba(98, 114, 164, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.string { color: rgba(241, 250, 140, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.numeric { color: rgba(189, 147, 249, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.language { color: rgba(189, 147, 249, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.character { color: rgba(189, 147, 249, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.other { color: rgba(189, 147, 249, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.variable {  }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.variable.other.readwrite.instance { color: rgba(255, 184, 108, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.character.escaped { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.character.escape { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.string.source { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.string.source.ruby { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.keyword { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.storage { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.storage.type { font-style: italic; color: rgba(139, 233, 253, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.class { text-decoration: underline; color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.other.inherited-class { color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.function { color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.variable.parameter { font-style: italic; color: rgba(255, 184, 108, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.tag { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.other.attribute-name { color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.function { color: rgba(139, 233, 253, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.constant { color: rgba(107, 229, 253, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.type { color: rgba(102, 217, 239, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.class { color: rgba(102, 217, 239, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.support.other.variable {  }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.invalid { color: rgba(248, 248, 240, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.invalid.deprecated { color: rgba(248, 248, 240, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.structure.dictionary.json.string.quoted.double.json { color: rgba(207, 207, 194, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.diff { color: rgba(98, 114, 164, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.diff.header { color: rgba(98, 114, 164, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.markup.deleted { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.markup.inserted { color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.markup.changed { color: rgba(230, 219, 116, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.constant.numeric.line-number.find-in-files.-.match { color: rgba(189, 147, 249, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.entity.name.filename { color: rgba(230, 219, 116, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.message.error { color: rgba(248, 51, 51, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.punctuation.definition.string.begin.json.-.meta.structure.dictionary.value.json { color: rgba(238, 238, 238, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.punctuation.definition.string.end.json.-.meta.structure.dictionary.value.json { color: rgba(238, 238, 238, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.structure.dictionary.json.string.quoted.double.json { color: rgba(139, 233, 253, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.structure.dictionary.value.json.string.quoted.double.json { color: rgba(241, 250, 140, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(255, 184, 108, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(255, 121, 198, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.meta.structure.dictionary.value.string { color: rgba(189, 147, 249, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.meta.structure.dictionary.value.string { color: rgba(80, 250, 123, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.meta.meta.structure.dictionary.value.string { color: rgba(255, 184, 108, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .monaco-editor-background { background-color: rgba(40, 42, 54, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .glyph-margin { background-color: rgba(40, 42, 54, 1); }
+    .vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .monaco-workbench .monaco-editor-background { background-color: rgba(40, 42, 54, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token { color: rgba(248, 248, 242, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .focused .selected-text { background-color: rgba(68, 71, 90, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .selected-text { background-color: rgba(68, 71, 90, 0.5); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .current-line { background-color: rgba(68, 71, 90, 1); border:0; }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .cursor { background-color: rgba(248, 248, 240, 1); border-color: rgba(248, 248, 240, 1); color: rgba(7, 7, 15, 1); }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .token.whitespace { color: rgba(59, 58, 50, 1) !important; }
+    .monaco-editor.vs-dark.vscode-theme-dracula-theme-theme-dracula-themes-Dracula-tmTheme .lines-content .cigr { background: rgba(59, 58, 50, 1); }

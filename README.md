@@ -38,6 +38,40 @@ fetch('http://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r 
 
 3) apply your themes on a file by file basis.
 
+## How to create a theme.yml:
+Basic Format:
+```
+display_name : Abyss
+class_name : abyss
+class_name_fq : vscode-theme-abyss-themes-Abyss-tmTheme
+dom_text : >
+    .monaco-editor.vs-dark.vscode-theme-abyss-themes-Abyss-tmTheme .token.comment { color: rgba(34, 51, 85, 1); }
+
+```
+
+2) it's important that the theme start with "vscode-theme".  For instance the amy theme originally looked like:
+```
+display_name : Amy
+class_name : amy
+class_name_fq : gerane-Theme-Amy-themes-Amy-tmTheme  
+dom_text : >
+    .monaco-editor.vs-dark.gerane-Theme-Amy-themes-Amy-tmTheme .token.comment.block { font-style: italic; color: rgba(64, 64, 128, 1); }
+
+```
+
+You have to covert it to be like:
+
+```
+display_name : Amy
+class_name : amy
+class_name_fq : vscode-theme-gerane-Theme-Amy-themes-Amy-tmTheme
+dom_text : >
+    .monaco-editor.vs-dark.vscode-theme-gerane-Theme-Amy-themes-Amy-tmTheme .token.comment.block { font-style: italic; color: rgba(64, 64, 128, 1); }
+
+```
+The reason for this is the code just assumes the classname for a theme starts with 'vscode-theme'.  I really just need to improve the regex expression in 'LocalThemeManagerNative.applyTheme' to be able to detect all the different native theme name formats.
+
+
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
