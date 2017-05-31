@@ -2,7 +2,7 @@
   "name": "mta-vs",
   "displayName": "mta-vs",
   "description": "muti-theme applicator for vscode",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "vt5491",
   "engines": {
     "vscode": "^1.0.0"

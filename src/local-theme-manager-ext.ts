@@ -2,18 +2,8 @@ import * as vscode from 'vscode';
 import {window, commands, Disposable, ExtensionContext,
   StatusBarAlignment, StatusBarItem, TextDocument, extensions} from 'vscode';
 import * as fs from "fs-extra";
-//vt add
-// import {join} from 'path';
 import * as path from 'path';
-//vt end
 import * as YAML from "yamljs";
-//vt add
-// var app = require('app');
-// import * as app from 'app';
-// var BrowserWindow = require('browser-window')
-// const {BrowserWindow} = require('electron');
-// var ipc = require('ipc');
-//vt end
 
 export interface ThemeInfo  {
     display_name: string;
@@ -29,16 +19,10 @@ export class LocalThemeManagerExt {
     public themeDir: string
     public cmdChannel : StatusBarItem
     public mtaExtension
-    //vt add
     public storagePath : string
-    // private path : any;
-    //vt end
 
     constructor(params) {
-      //vt add
-      console.log(`LocalThemeManagerExt.ctor: entered`);
       console.log(`LocalThemeManagerExt.ctor: storagePath=${params.storagePath}`);
-      //vt end
       this.fs = params.fs || fs;
       this.YAML = params.YAML || YAML;
       // Note: this is defunct. replace by mtaExtension.extensionPath
@@ -48,21 +32,9 @@ export class LocalThemeManagerExt {
       if (!this.cmdChannel) {
         this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
       }
-      //vt add
       this.addActiveEditorChangeListener();
-      // this.addCloseTerminalListener();
 
-      //vt add
       this.storagePath = params.storagePath;
-      // this.getMtaVsPersistenceFile();
-      //vt end
-      //set the default theme
-      // console.log(`LocalThemeManagerExt.ctor: setting default theme`);
-      // let defaultTheme = 'vs_light_plus';
-      // // defaultTheme += ".yml";
-      // this.cmdChannel.text = `setDefaultTheme: ${defaultTheme}`;
-      // this.cmdChannel.show();
-      //vt end
     }
 
     public doIt() : number {
@@ -74,46 +46,24 @@ export class LocalThemeManagerExt {
       var themeList = this.getThemeList()
       vscode.window.showQuickPick(themeList)
         .then(val => {
-          //vt add
           if (val) {
-            //vt end
             // Update the status bar
             this.cmdChannel.text = `Theme: ${val}`
             this.cmdChannel.show();
-          //vt add
           }
-          //vt end
         });
     }
 
-    //vt add
     // add a listener for 'onDidChangeActiveTextEditor'
     addActiveEditorChangeListener() {
-      console.log(`LocalThemeManagerExt.addActiveEditorChangeLister: entered`);
-      
       vscode.window.onDidChangeActiveTextEditor(
         (event) => {
-          console.log(`LocalThemeManagerExt: active editor changed, event.id=${event.id}`);
-          console.log(`LocalThemeManagerExt: activeEditor=${vscode.window.activeTextEditor}`);
-          // debugger;
           // Update the status bar
           this.cmdChannel.text = `Event: activeEditorChange`
           this.cmdChannel.show();
        })
     } 
 
-    // addCloseTerminalListener() {
-    //   vscode.window.onDidCloseTerminal(
-    //     (event) => {
-    //       console.log(`LocalThemeManagerExt.onDidCloseTerminal: now handling event ${event}`);
-          
-    //     }
-    //   )
-    // }
-
-    //vt end
-
-    //vt add
     public deactivate() {
       console.log(`LocalThemeManager.deactivate: entered`);
       // Update the status bar
@@ -127,7 +77,6 @@ export class LocalThemeManagerExt {
       //note we get the response (themeInfo JSON) in CmdServerExt under the start().createServer() function
       
     }
-    //vt end
 
     //Getters and Setters
 
@@ -140,7 +89,6 @@ export class LocalThemeManagerExt {
       return themeInfo
     }
 
-    //TODO: update this to use getThemeDir
     public getThemeList() {
       let fileList : string[] = fs.readdirSync(this.getThemeDir())
       let themeList : string[] = []
@@ -161,20 +109,15 @@ export class LocalThemeManagerExt {
       return themeDir + '/dom-text-themes/'
     }
 
-    //vt add
     public setDefaultTheme() {
       //set the default theme
-      console.log(`LocalThemeManagerExt.setDefaultTheme: setting default theme`);
-      // let defaultTheme = 'vs_light_plus';
       const workbenchConfig = vscode.workspace.getConfiguration('workbench')
       let defaultTheme = workbenchConfig.get('colorTheme')
 
       if (defaultTheme === 'Default Light+') {
         defaultTheme = 'vs_light_plus';
       }
-      console.log(`LocalThemeManagerExt.setDefaultTheme: official theme=${defaultTheme}`);
       
-      // defaultTheme += ".yml";
       if (!this.cmdChannel) {
         this.cmdChannel = window.createStatusBarItem(StatusBarAlignment.Left);
       };
@@ -190,21 +133,13 @@ export class LocalThemeManagerExt {
     // code where we have, for example, the default path hard-coded.
     getMtaVsPersistenceFile() {
       let mtavsFn = '';
-      console.log(`LocalThemeManagerExt.getMtaVsPersistenceFile: entered`);
-      console.log(`LocalThemeManagerExt.getMtaVsPersistenceFile: storagePath=${this.storagePath}`);
-      // console.log(`__dirname=${__dirname}`);
-
-      // mtavsFn = __dirname;
       mtavsFn = path.join(this.storagePath, '.mta-vs');
-      // mtavsFn = this.storagePath + '\\.mta-vs';
-      console.log(`LocalThemeManagerExt.getMtaVsPersistenceFile: mtavsFn=${mtavsFn}`);
       
       if (!fs.existsSync(mtavsFn)) {
         fs.createFileSync(mtavsFn)
       }
 
       return mtavsFn;
-
     }
 
     // persist the current themeInfo to '.mta-vs.json' in the current dir, so
@@ -212,11 +147,9 @@ export class LocalThemeManagerExt {
     writeFileLookup(fileLookup) {
       let persistanceFile = this.getMtaVsPersistenceFile();
 
-      // fs.writeJsonSync(persistanceFile, fileLookup);
       fs.writeFileSync(persistanceFile, fileLookup);
     }
 
-    // readFileLookup() : string {
     readFileLookup() : {} {
       let persistanceFile = this.getMtaVsPersistenceFile();
 
@@ -225,39 +158,11 @@ export class LocalThemeManagerExt {
         const fileSizeInBytes = stats.size
 
         if (fileSizeInBytes > 0) {
-          // let s = fs.readJsonSync(persistanceFile);// crashes
           let s = fs.readFileSync(persistanceFile).toString();
-          // s = s.replace(/\\n/g, "\\n")  
-          //      .replace(/\\'/g, "\\'")
-          //      .replace(/\\"/g, '\\"')
-          //      .replace(/\\&/g, "\\&")
-          //      .replace(/\\r/g, "\\r")
-          //      .replace(/\\t/g, "\\t")
-          //      .replace(/\\b/g, "\\b")
-          //      .replace(/\\f/g, "\\f");
-          // // remove non-printable and other non-valid JSON chars
-          // s = s.replace(/[\u0000-\u0019]+/g, ""); 
-          // return fs.readFileSync(persistanceFile);
           return s;
         }
       }
 
-      // return null;
-      // fs.stat(persistanceFile, function (err, stat) {
-      //   if (err == null) {
-      //     return fs.readJsonSync(persistanceFile);
-      //   } else if (err.code == 'ENOENT') {
-      //     // file does not exist
-      //     // fs.writeFile('log.txt', 'Some log\n');
-      //     return '';
-      //   } else {
-      //     console.log('LocalThemeManagerExt.readFileLookup: ', err.code);
-      //   }
-      // });
-
       return JSON.stringify({});
-      // return JSON.parse('{}');
     }
-
-    //vt end
 }

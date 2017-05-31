@@ -138,21 +138,15 @@ describe('simple test', () => {
     expect(themeList.length).to.equal(2)
   })
 
-  //vt add
   it('getMtaVsPersistenceFile creates a .mta-vs file if one does not exists', () => {
     // clear out any prior storagPath .mta-vs file
     let mtavsFile = path.join(storagePath, '.mta-vs');
     fs.removeSync(mtavsFile);
     let persistenceFile = '';
     persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
-    // persistenceFile = localThemeManagerExt.doIt();
-    // persistenceFile = localThemeManagerExt.getMtaVsPersistenceFile();
-    // persistenceFile = localThemeManagerNative.persistThemeInfo();
-    console.log(`ut:persistenceFile=${persistenceFile}`);
     expect(persistenceFile).to.exist
     expect(persistenceFile).to.be.a('string');
     expect(fs.existsSync(mtavsFile)).to.be.true;
-
   });
 
   it('writeFileLookup writes json properly', () => {
@@ -164,17 +158,6 @@ describe('simple test', () => {
 
     // read the file
     let fileThemeInfo = fs.readJsonSync(persistenceFile);
-    // fs.readJson('persistenceFile');
-    // .then(fileThemeInfo => {
-    //   // console.log(packageObj.version) // => 0.1.3
-    //   console.log(`ut:themeInfo.display_name=${fileThemeInfo.display_name}`);
-    // })
-    // .catch(err => {
-    //   console.error(err)
-    // })
-    console.log(`ut:themeInfo.display_name=${fileThemeInfo.display_name}`);
     expect(fileThemeInfo.display_name).to.equal(themeInfo.display_name);
-
   })
-  //vt end
 })

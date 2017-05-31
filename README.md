@@ -89,3 +89,8 @@ Users appreciate release notes as you update your extension.
 ### 0.0.1
 
 Initial release on 2016-09-01
+
+### 0.2.0
+2017-05-30
+- Allow for mixed light and dark themes.
+- Add support for reloading themes upon Vscode restart (persistent theming).
