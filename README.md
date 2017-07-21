@@ -31,7 +31,7 @@ theme) as the starting theme.  You may also need to do a ctrl-r from the javascr
 1) Install Jquery and user libraries into the console:  
 
 `
-fetch('http://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r => {eval(r); eval(r);}).then( r => {document.MTA_VS = {}; $.when( fetch('http://localhost:8000/editor-theme-change-listener.js').then(r => r.text()).then(r => eval(r)), fetch('http://localhost:8000/local-theme-manager-native.js').then(r => r.text()).then(r => eval(r)), fetch('http://localhost:8000/mta-vs-native.js').then(r => r.text()).then(r => eval(r)) ) .done(function(first_call, second_call, third_call){ console.log('all loaded'); }) .fail(function(){ console.log('load failed'); });})
+fetch('https://code.jquery.com/jquery-latest.min.js').then(r => r.text()).then(r => {eval(r); eval(r);}).then( r => {document.MTA_VS = {}; $.when( fetch('http://localhost:8000/editor-theme-change-listener.js').then(r => r.text()).then(r => eval(r)), fetch('http://localhost:8000/local-theme-manager-native.js').then(r => r.text()).then(r => eval(r)), fetch('http://localhost:8000/mta-vs-native.js').then(r => r.text()).then(r => eval(r)) ) .done(function(first_call, second_call, third_call){ console.log('all loaded'); }) .fail(function(){ console.log('load failed'); });})
 `
 
 2) Invoke theme dropdown with either ctrl-shift-v or selecting *mta* from the main command prompt (ctlr-shift-p)
